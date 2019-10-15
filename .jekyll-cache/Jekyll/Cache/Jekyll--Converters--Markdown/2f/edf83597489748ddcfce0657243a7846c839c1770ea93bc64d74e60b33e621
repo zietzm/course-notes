@@ -1,0 +1,87 @@
+I".%<p><br /></p>
+
+<blockquote>
+  <p>Biomedical informatics (BMI) is the interdisciplinary field that studies and pursues the <strong>effective uses of biomedical data, information, and knowledge</strong> for scientific inquiry, problem solving, and decision making, motivated by efforts to improve human health.</p>
+
+  <p>– <cite>American Medical Informatics Association (AMIA)</cite><label for="bmi_def" class="margin-toggle sidenote-number"></label><input type="checkbox" id="bmi_def" class="margin-toggle" /><span class="sidenote">Kulikowski et al. JAMIA. 2012 Nov 1;19(6):931-8. <a href="https://doi.org/10.1136/amiajnl-2012-001053">doi:10.1136/amiajnl-2012-001053</a></span></p>
+</blockquote>
+
+<h2 id="data-information-knowledge">Data, information, knowledge</h2>
+
+<p><span class="newthought">Biomedical informatics</span> is fundamentally a field concerned with data, information, and knowledge.</p>
+
+<p>Data are the building blocks of information.
+Raw lab test values, clinical code occurrences, and patient gene sequences are examples of biomedical data.
+Our purpose for using medical data is ultimately to extract information and gain knowledge.</p>
+
+<p>Information is data with context and meaning.
+In the examples given, information could be the contextualization of a number to a lab test value, a code in a diagnosis field to a disease concept, or a set of sequencing reads to a set of variant calls.
+The difference between data and information is the difference between <code class="highlighter-rouge">(PID=41235934,6.7)</code> and, “Jane Doe HbA1c = 6.7%”.</p>
+
+<p>Knowledge is the highest level in this hierarchy<label for="note_knowledge" class="margin-toggle sidenote-number"></label><input type="checkbox" id="note_knowledge" class="margin-toggle" /><span class="sidenote">Knowledge is the highest level with which biomedical informatics is concerned, though <a href="https://en.wikipedia.org/wiki/DIKW_pyramid">wisdom is often added</a> as the fourth and highest concept in the data-information-knowledge (or data-information-knowledge-wisdom in that case) hierarchy.</span>
+, and it is a difficult concept to define.
+Unlike data or information, knowledge is a subjective, human phenomenon<label for="note_knowledge2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="note_knowledge2" class="margin-toggle" /><span class="sidenote">Weinberger takes issue with knowledge even being represented in this hierarchy as derived from information. “[K]nowledge is not determined by information, for it is the knowing process that first decides which information is relevant, and how it is to be used.” (<a href="https://hbr.org/2010/02/data-is-to-info-as-info-is-not">source</a>)</span>
+.
+An example of knowledge is that Dr. Roe knows that Jane’s HbA1C test is <a href="https://medlineplus.gov/lab-tests/hemoglobin-a1c-hba1c-test/">indicative of diabetes</a>.</p>
+
+<p>Knowledge enables clinicians to treat patients, and clinical knowledge can be discovered, provided, and supported by biomedical informatics.
+In the study of symbolic methods, knowledge includes the relationships between concepts, the structure and types of relationships, and the relationships between concepts and their attributes<label for="note_knowledge3" class="margin-toggle sidenote-number"></label><input type="checkbox" id="note_knowledge3" class="margin-toggle" /><span class="sidenote">The discussion so far is meant to motivate our study, not to present the final word on these concepts. Many of the definitions given here are debatable. There is also inherent ambiguity, as one person’s knowledge may be another’s data.</span>
+.</p>
+
+<h2 id="symbolic-methods">Symbolic methods</h2>
+
+<p><span class="newthought">Symbolic methods</span> use explicit representations and previously-known relationships to gain information from data<label for="sym_nonsym" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sym_nonsym" class="margin-toggle" /><span class="sidenote"><a href="https://medium.com/intuitionmachine/the-two-paths-from-natural-language-processing-to-artificial-intelligence-d5384ddbfc18">Helpful article</a> on symbolic vs nonsymbolic methods in NLP</span>
+.</p>
+
+<p>In other words, data + information/knowledge = more information/knowledge.</p>
+
+<p>Incorporating existing information/knowledge in the pursuit of further information/knowledge presents two key challenges:</p>
+
+<ol>
+  <li>Standardization that ensures interoperability between data sources and prevents incorrect redundancies.</li>
+  <li>Knowledge representation that captures relationships between concepts.</li>
+</ol>
+
+<h2 id="interoperability">Interoperability</h2>
+
+<blockquote>
+  <p>Interoperability is the ability of different information systems, devices and applications (‘systems’) to access, exchange, integrate and cooperatively use data in a coordinated manner, within and across organizational, regional and national boundaries, to provide timely and seamless portability of information and optimize the health of individuals and populations globally.</p>
+
+  <p>– <cite>Healthcare Information and Management Systems Society (HIMSS)</cite><label for="interop_def" class="margin-toggle sidenote-number"></label><input type="checkbox" id="interop_def" class="margin-toggle" /><span class="sidenote">HIMSS Dictionary of Health IT terms, acronyms, and organizations. 2017. (<a href="https://www.himss.org/library/interoperability-standards/what-is-interoperability">link</a>)</span></p>
+</blockquote>
+
+<p><span class="newthought">Interoperability</span> in the context of biomedical data refers to the ability of systems to exchange data, information, and knowledge among various types of actors within and between institutions.</p>
+
+<p>In essence, interoperability means that knowledge is shared among all parties either involved in the care of a patient or who are allowed to access the records<label for="interop_def2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="interop_def2" class="margin-toggle" /><span class="sidenote">Note: interoperability does not refer specifically to electronic health records.</span>
+.</p>
+
+<p>Interoperability can be divided into a <a href="https://www.himss.org/library/interoperability-standards/what-is-interoperability">hierarchy</a> based on the ability to exchange data, information, or knowledge<label for="interop_def2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="interop_def2" class="margin-toggle" /><span class="sidenote">The 4th edition of the HIMSS Dictionary of Healthcare Information Technology Terms (2017) includes a highest level, Orgazational interoperability. In essence this level indicates that agreement has been reached about when and why data can be exchanged.</span>
+.</p>
+
+<p>Foundational interoperability deals with the exchange of <em>data</em> at the lowest level, without requiring that the receiving system be able to interpret the data.
+An example of foundational interoperability is a medical device that can send data to a medical record system, without the data being in a format that the system understands.</p>
+
+<p>Structural interoperability is achieved once foundational interoperability is paired with a standardized format for <em>information</em> exchange.
+For example, two systems are structurally interoperable if they can exchange JSON documents containing patient records.
+However, while both systems may use the same JSON schema, they may use different vocabularies to encode concepts.</p>
+
+<p>Semantic interoperability describes when systems can use the information they exchange between one another.
+In other words, two systems can share <em>knowledge</em>.
+For clinical data, this means that two systems share the format (eg. data encoding, file type) and semantic encoding (eg. same terminology for drugs) of the data they exchange.</p>
+
+<h2 id="the-curly-braces-problem">The curly braces problem</h2>
+
+<p><span class="newthought">An early approach</span> to the interoperability of medical knowledge was the Arden syntax, a language which allows clinical decision support tools to be shared across multiple health record systems<label for="arden" class="margin-toggle sidenote-number"></label><input type="checkbox" id="arden" class="margin-toggle" /><span class="sidenote">Hripcsak G. Computers in Biology and Medicine. 1994 Sep 1;24(5):331-63. <a href="https://doi.org/10.1016/0010-4825(94)90002-7">doi:10.1016/0010-4825(94)90002-7</a></span>
+.</p>
+
+<p>Because different hospitals store data differently, the syntax was designed with institution-specific mappings inside curly braces.
+In order to implement a medical logic module (MLM) at a new institution, one needs only to provide references to fields as defined in the institution’s database.</p>
+
+<p>For example, to find the minimum serum potassium for a patient, the Arden syntax would read</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a : = read min ( {‘serum potassium’} )
+</code></pre></div></div>
+<p>To implement the code, an institution must replace <code class="highlighter-rouge">{serum potassium}</code> with the field in their database for serum potassium.
+While this sounds simple, such customizations are nontrivial and can often require expert medical knowledge to implement.
+Barriers to interoperability based on interface challenges and different data standards are referred to as the “curly braces problem”.</p>
+:ET
