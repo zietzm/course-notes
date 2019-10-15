@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tufte-Jekyll</title>
-    <description>A Jekyll theme for content-rich sites</description>
-    <link>/course-notes/</link>
-    <atom:link href="/course-notes/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Oct 2019 18:01:57 -0400</pubDate>
-    <lastBuildDate>Tue, 15 Oct 2019 18:01:57 -0400</lastBuildDate>
+    <title>Michael Zietz's Course Notes</title>
+    <description></description>
+    <link>http://localhost:4000/course-notes/</link>
+    <atom:link href="http://localhost:4000/course-notes/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 15 Oct 2019 18:15:37 -0400</pubDate>
+    <lastBuildDate>Tue, 15 Oct 2019 18:15:37 -0400</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
@@ -26,8 +26,8 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 
 </description>
         <pubDate>Sun, 08 Feb 2015 08:06:04 -0500</pubDate>
-        <link>/course-notes/articles/15/welcome-to-jekyll</link>
-        <guid isPermaLink="true">/course-notes/articles/15/welcome-to-jekyll</guid>
+        <link>http://localhost:4000/course-notes/articles/15/welcome-to-jekyll</link>
+        <guid isPermaLink="true">http://localhost:4000/course-notes/articles/15/welcome-to-jekyll</guid>
         
         
         <category>jekyll</category>
