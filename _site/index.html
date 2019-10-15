@@ -5,158 +5,138 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Contents</title>
-  <meta name="description" content="Lecture notes for Stanford cs228.">
+  <title>blog</title>
+  <meta name="description" content="A Jekyll theme for content-rich sites">
 
-  <link rel="stylesheet" href="/cs228-notes/css/tufte.css">
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+  
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
 
-  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not--><link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'><!-- Load up MathJax script if needed ... specify in /_data/options.yml file--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML"></script><script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <link rel="stylesheet" type="text/css" href="/css/tufte.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
 
-  ga('create', 'UA-75587219-1', 'auto');
-  ga('send', 'pageview');
-  </script>
+  <link rel="canonical" href="http://localhost:4000/">
 
-  <link rel="canonical" href="/cs228-notes/">
-  <link rel="alternate" type="application/rss+xml" title="Probabilistic graphical modeling course" href="/cs228-notes/feed.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Tufte-Jekyll" href="http://localhost:4000/feed.xml" />
 </head>
 
-  <body>
+  <body class="full-width">
     <!--- Header and nav template site-wide -->
 <header>
     <nav class="group">
-    <a href="/cs228-notes/">Contents</a>
-    <a href="http://cs228.stanford.edu/">Class</a>
-    <a href="http://github.com/ermongroup/cs228-notes">GitHub</a>
-    </nav>
+	<a href="/"><img class="badge" src="/assets/img/badge_1.png" alt="CH"></a>
+	
+		
+  	
+		
+		    
+		      <a class="active" href="/" class="active">blog</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/page/">page</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/about/">About</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/css/print.css"></a>
+		    
+	    
+  	
+		
+  	
+	</nav>
 </header>
+    <article>
+        <h1 class="content-listing-header sans">Articles</h1>
+  <ul class="content-listing ">
+          
+        <li class="listing">
+          <hr class="slender">
+          <a href="/articles/15/tufte-style-jekyll-blog"><h3 class="contrast">Tufte-style Jekyll blog</h3></a>
+          <br><span class="smaller">February 19, 2015</span>  <br/>
+          <div><h2 id="introduction">Introduction</h2>
 
-    <article class="group">
-      <h1>Contents</h1>
-<p class="subtitle"></p>
+<p><span class="newthought">The Tufte Jekyll theme</span>  is an attempt to create a website design with the look and feel of Edward Tufte’s books and handouts. Tufte’s style is known for its extensive use of sidenotes, tight integration of graphics with text, and well-set typography.</p>
+</div> 
+        </li>
+          
+        <li class="listing">
+          <hr class="slender">
+          <a href="/articles/15/Edge-Cases"><h3 class="contrast">Edge Cases</h3></a>
+          <br><span class="smaller">February 17, 2015</span>  <br/>
+          <div><p>Some edge cases and cautionary examples on using Markdown for writing content using this theme. In particular, list syntax can really knot things up.</p>
+</div> 
+        </li>
+          
+        <li class="listing">
+          <hr class="slender">
+          <a href="/articles/15/welcome-to-jekyll"><h3 class="contrast">Welcome to Jekyll!</h3></a>
+          <br><span class="smaller">February 8, 2015</span>  <br/>
+          <div><p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory - edit this post and re-build (or run with the <code class="highlighter-rouge">-w</code> switch) to see your changes!
+To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.=]</p>
 
+<p>Jekyll also offers powerful support for code snippets:</p>
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: {
-      Macros: {
-        e: "\\epsilon",
-        xti: "x^{(i)}",
-        yti: "y^{(i)}",
-        bfy: "{\\bf y}",
-        bfx: "{\\bf x}",
-        bfg: "{\\bf g}",
-        bfbeta: "{\\bf \\beta}",
-        tp: "\\tilde p",
-        pt: "p_\\theta",
-        E: "{\\mathbb{E}}",
-        Ind: "{\\mathbb{I}}",
-        KL: "{\\mathbb{KL}}",
-        Re: "{\\mathbb{R}}",
-        Dc: "{\\mathcal{D}}",
-        Tc: "{\\mathcal{T}}",
-        Xc: "{\\mathcal{X}}",
-        note: ["\\textcolor{blue}{[NOTE: #1]}",1]
-      }
-    }
-  });
-</script>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
 
+<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/mojombo/jekyll">Jekyll’s GitHub repo</a>.</p>
 
-<p><span class="newthought">These notes</span> form a concise introductory course on probabilistic graphical models<label for="note-pgm" class="margin-toggle sidenote-number"></label><input type="checkbox" id="note-pgm" class="margin-toggle" /><span class="sidenote">Probabilistic graphical models are a subfield of machine learning that studies how to describe and reason about the world in terms of probabilities.</span>.
-They are based on Stanford <a href="https://cs228.stanford.edu/">CS228</a>, and are written by <a href="http://www.stanford.edu/~kuleshov">Volodymyr Kuleshov</a> and <a href="http://cs.stanford.edu/~ermon/">Stefano Ermon</a>, with the <a href="https://github.com/ermongroup/cs228-notes/commits/master">help</a> of many students and course staff.
-<label for="mn-construction" class="margin-toggle">⊕</label><input type="checkbox" id="mn-construction" class="margin-toggle" /><span class="marginnote">The notes are still <strong>under construction</strong>! Although we have written up most of the material, you will probably find several typos. If you do, please let us know, or submit a pull request with your fixes to our <a href="https://github.com/ermongroup/cs228-notes">GitHub repository</a>.</span>
-You too may help make these notes better by submitting your improvements to us via <a href="https://github.com/ermongroup/cs228-notes">GitHub</a>.</p>
-
-<p>This course starts by introducing probabilistic graphical models from the very basics and concludes by explaining from first principles the <a href="extras/vae">variational auto-encoder</a>, an important probabilistic model that is also one of the most influential recent results in deep learning.</p>
-
-<h2 id="preliminaries">Preliminaries</h2>
-
-<ol>
-  <li>
-    <p><a href="preliminaries/introduction/">Introduction</a>: What is probabilistic graphical modeling? Overview of the course.</p>
-  </li>
-  <li>
-    <p><a href="preliminaries/probabilityreview">Review of probability theory</a>: Probability distributions. Conditional probability. Random variables (<em>under construction</em>).</p>
-  </li>
-  <li>
-    <p><a href="preliminaries/applications">Examples of real-world applications</a>: Image denoising. RNA structure prediction. Syntactic analysis of sentences. Optical character recognition (<em>under construction</em>).</p>
-  </li>
-</ol>
-
-<h2 id="representation">Representation</h2>
-
-<ol>
-  <li>
-    <p><a href="representation/directed/">Bayesian networks</a>: Definitions. Representations via directed graphs. Independencies in directed models.</p>
-  </li>
-  <li>
-    <p><a href="representation/undirected/">Markov random fields</a>: Undirected vs directed models. Independencies in undirected models. Conditional random fields.</p>
-  </li>
-</ol>
-
-<h2 id="inference">Inference</h2>
-
-<ol>
-  <li>
-    <p><a href="inference/ve/">Variable elimination</a> The inference problem. Variable elimination. Complexity of inference.</p>
-  </li>
-  <li>
-    <p><a href="inference/jt/">Belief propagation</a>: The junction tree algorithm. Exact inference in arbitrary graphs. Loopy Belief Propagation.</p>
-  </li>
-  <li>
-    <p><a href="inference/map/">MAP inference</a>: Max-sum message passing. Graphcuts. Linear programming relaxations. Dual decomposition.</p>
-  </li>
-  <li>
-    <p><a href="inference/sampling/">Sampling-based inference</a>: Monte-Carlo sampling. Forward Sampling. Rejection Sampling. Importance sampling. Markov Chain Monte-Carlo. Applications in inference.</p>
-  </li>
-  <li>
-    <p><a href="inference/variational/">Variational inference</a>: Variational lower bounds. Mean Field. Marginal polytope and its relaxations.</p>
-  </li>
-</ol>
-
-<h2 id="learning">Learning</h2>
-
-<ol>
-  <li>
-    <p><a href="learning/directed/">Learning in directed models</a>: Maximum likelihood estimation. Learning theory basics. Maximum likelihood estimators for Bayesian networks.</p>
-  </li>
-  <li>
-    <p><a href="learning/undirected/">Learning in undirected models</a>: Exponential families. Maximum likelihood estimation with gradient descent. Learning in CRFs</p>
-  </li>
-  <li>
-    <p><a href="learning/latent/">Learning in latent variable models</a>: Latent variable models. Gaussian mixture models. Expectation maximization.</p>
-  </li>
-  <li>
-    <p><a href="learning/bayesian/">Bayesian learning</a>: Bayesian paradigm. Conjugate priors. Examples (<em>under construction</em>).</p>
-  </li>
-  <li>
-    <p><a href="learning/structure/">Structure learning</a>: Chow-Liu algorithm. Akaike information criterion. Bayesian information criterion. Bayesian structure learning (<em>under construction</em>).</p>
-  </li>
-</ol>
-
-<h2 id="bringing-it-all-together">Bringing it all together</h2>
-
-<ol>
-  <li>
-    <p><a href="extras/vae">The variational autoencoder</a>: Deep generative models. The reparametrization trick. Learning latent visual representations.</p>
-  </li>
-  <li>
-    <p><a href="extras/readings">List of further readings</a>: Structured support vector machines. Bayesian non-parametrics.</p>
-  </li>
-</ol>
-
-
+</div> 
+        </li>
+    
+  </ul>
     </article>
+    <span class="print-footer">blog - clay harmon</span>
     <footer>
-<hr class="slender">
+  <hr class="slender">
+  <ul class="footer-links">
+    <li><a href="mailto:hate@spam.net"><span class="icon-mail"></span></a></li>    
+    
+      <li>
+        <a href="//www.twitter.com/twitter_handle"><span class="icon-twitter"></span></a>
+      </li>
+    
+      <li>
+        <a href="//plus.google.com/+googlePlusName"><span class="icon-googleplus"></span></a>
+      </li>
+    
+      <li>
+        <a href="//github.com/GithubHandle"><span class="icon-github"></span></a>
+      </li>
+    
+      <li>
+        <a href="//www.flickr.com/photos/FlickrUserID"><span class="icon-flickr"></span></a>
+      </li>
+    
+      <li>
+        <a href="/feed"><span class="icon-feed"></span></a>
+      </li>
+      
+  </ul>
 <div class="credits">
-Site created with <a href="//jekyllrb.com">Jekyll</a> using the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme</a>. &copy; 2019
-</div>
+<span>&copy; 2019 &nbsp;&nbsp;CLAY HARMON</span></br> <br>
+<span>This site created with the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme for Content-centric blogging </a> in <a href="//jekyllrb.com">Jekyll</a>.</span> 
+</div>  
 </footer>
-
   </body>
 </html>
