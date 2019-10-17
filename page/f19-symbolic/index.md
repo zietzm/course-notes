@@ -10,13 +10,13 @@ These notes are for BINF 4003 - Methods III: Symbolic Methods, taught in the Fal
 
 1. [Introduction](introduction): What are symbolic methods? Data-Information-Knowledge hierarchy, interoperability, "curly braces problem".
 
-2. [Knowledge representation](knowl-rep): Medical knowledge representations, closed vs open world assumptions, reference vs interface terminologies.
+2. [Knowledge representation](knowledge-representation): Medical knowledge representations, closed vs open world assumptions, reference vs interface terminologies, pre- vs post-coordination.
 
 3. [Desiderata for medical vocabularies](desiderata): Characteristics of high-quality controlled medical vocabularies.
 
 ## Specific terminologies and tools
 
-1. [SNOMED](snomed): Design, structure, limitations, adoption, SNOMED clinical terms (SNOMED-CT).
+1. [SNOMED](snomed): Design, structure, limitations, adoption, SNOMED clinical terms (SNOMED CT).
 
 2. [ICD](icd): Design, structure, limitations, adoption, versions: ICD-9, ICD-10, ICD-11.
 

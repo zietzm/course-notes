@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Knowledge representation
-permalink: /f19-symbolic/knowl-rep
+permalink: /f19-symbolic/knowledge-representation
 ---
 
 <br>
@@ -63,3 +63,25 @@ Interface terminologies{% include sidenote.html id="interface" note="In the cont
 [IMO Core](https://www.imohealth.com/imo-core/) is an example of an interface terminology.
 
 In general, the structure, content, and constraints of knowledge representations should by informed by the purpose for which they are created.
+
+## Pre- and post-coordination
+
+<span class="newthought">The implementation</span> of a medical vocabulary ultimately requires content.
+Unfortunately, no vocabulary can ever contain all medical concepts and relationships.
+There will always be medical thoughts which cannot be fully represented using existing terms.
+
+There are two main approaches to representing complex meanings using an incomplete vocabulary: pre-coordination and post-coordination.
+
+In pre-coordination, medical thoughts are represented by single concepts.
+To include a complex thought in the vocabulary, a new term is created that represents the thought.
+
+Post-coordination is more flexible, allowing users to combine multiple terms to represent a complex thought.
+
+Both approaches have advantages and disadvantages.
+Pre-coordination can be simpler for users, but it requires either the anticipation of all possible term combinations or a vocabulary maintenance team that is responsive to requests for new terms.
+Post-coordination is more flexible and rapidly scalable, but it can be inconvenient if users want repeatedly to enter complex thoughts that contain several terms.
+
+There are three types of post-coordination: refinement, qualification, and combination.
+Refinement increases the specificity of a concept.
+Qualification adds attributes not present in the original concept.
+Combination uses multiple concepts to represent a given meaning.

@@ -55,7 +55,7 @@ In medical vocabularies, this would mean, for example, creating all variants of 
 Third, a small number of necessary terms could be provided which users piece together to represent a meaning.
 This approach is known as post-coordination{% include sidenote.html id="prepost" note="Post-coordination can be contrasted with pre-coordination, the inclusion of higher-level concepts in a vocabulary. The first and second approaches mentioned here are examples of pre-coordination." %}.
 
-Regardless of which approach is taken, a high-quality controlled medical vocabulary should be as comprehensive as possible and use  a defined method for adding missing terms.
+Regardless of which approach is taken, a high-quality controlled medical vocabulary should be as comprehensive as possible and use a defined method for adding missing terms.
 
 ## Concept orientation
 
@@ -129,6 +129,9 @@ A multipurpose vocabulary should have levels of granularity that are appropriate
 
 A high degree of specificity may be required for highly specialized tasks, while such granularity might be cumbersome for a more general task.
 A reusable vocabulary that supports multiple tasks should therefore have multiple levels of granularity.
+
+Consistent granularity is also important.
+For example, if multiple paths lead to a concept, then these paths should be of equal length.
 
 ## Multiple consistent views
 
