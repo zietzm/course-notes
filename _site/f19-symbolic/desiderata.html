@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Desiderata</title>
+  <title>Desiderata for medical vocabularies</title>
   <meta name="description" content="">
 
   <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
@@ -37,15 +37,226 @@
 
     <article class="group">
       <br><br><br><br>
-<h1>Desiderata</h1>
+<h1>Desiderata for medical vocabularies</h1>
 <p class="subtitle"></p>
 
+<h2 id="motivation">Motivation</h2>
 
+<p><label for="nb1" class="margin-toggle">⊕</label>
+<input type="checkbox" id="nb1" class="margin-toggle" />
+<span class="marginnote"><a href="/course-notes/page/f19-symbolic/img/unreadable_note.jpg"><img class="fullwidth" src="/course-notes/page/f19-symbolic/img/unreadable_note.jpg" alt="Example of unreadable pharmaceutical prescription ([source](https://www.reddit.com/r/pharmacy/comments/2z33vh/maybe_im_a_little_out_of_the_retail_game_but_if/?utm_source=share&amp;utm_medium=web2x))" /></a><br />
+    Example of unreadable pharmaceutical prescription (<a href="https://www.reddit.com/r/pharmacy/comments/2z33vh/maybe_im_a_little_out_of_the_retail_game_but_if/?utm_source=share&amp;utm_medium=web2x">source</a>)
+</span></p>
+
+<p><span class="newthought">Computers began</span> to be adopted in medical practices with the goals of increasing effectiveness, efficiency, and safety.
+The idea was that clinical practice would use computer messages rather than unreadable handwriting on paper.</p>
+
+<p>The need for controlled medical vocabularies became obvious with the need to standardize a huge number of computer-based clinical systems.</p>
+
+<p>For example, electronic systems would contain a standardized representation of all prescribable drugs so that physicians and pharmacists could exchange prescriptions consistently and without ambiguity.</p>
+
+<p>The necessity of controlled vocabularies resulted in a number of academic hospitals creating their own vocabularies.
+Over time, many of these site-specific vocabularies became bloated, full of redundancies and inconsistencies.</p>
+
+<p>Medical vocabularies needed high quality standards.</p>
+
+<h2 id="the-desiderata">The desiderata</h2>
+
+<p><span class="newthought">To remedy</span> the limitations of previous work and allow interoperability, high-quality and well-maintained standardized vocabularies were needed.
+In 1998, Dr. James Cimino published a paper describing 12 desirable characteristics of controlled medical vocabularies<label for="desid" class="margin-toggle sidenote-number"></label><input type="checkbox" id="desid" class="margin-toggle" /><span class="sidenote">Cimino JJ. Methods of Information in Medicine. 1998;37(04/05):394-403. <a href="https://doi.org/10.1055/s-0038-1634558">doi:10.1055/s-0038-1634558</a></span>
+.
+His requirements were intended to guide developers and have been realized in a number of standardization projects.</p>
+
+<ol>
+  <li>Comprehensive content</li>
+  <li>Concept orientation</li>
+  <li>Concept permanence</li>
+  <li>Nonsemantic concept identifiers</li>
+  <li>Polyhierarchy</li>
+  <li>Formal definitions</li>
+  <li>No catch-all concepts like “Not elsewhere classified”</li>
+  <li>Multiple levels of granularity</li>
+  <li>Multiple consistent views</li>
+  <li>Ability to represent context</li>
+  <li>Graceful evolution</li>
+  <li>Recognition of redundancy</li>
+</ol>
+
+<p>Each of these points is covered individually below.</p>
+
+<h2 id="comprehensive-content">Comprehensive content</h2>
+
+<p><span class="newthought">One of the</span> challenges in creating medical vocabularies is to comprehensively cover the domain of interest.
+Several approaches to this challenge are possible.</p>
+
+<p>First, a vocabulary could add terms when needed.
+This requires that users be able to suggest new terms and developers respond to suggestions.</p>
+
+<p>Second, a vocabulary could create all possible terms in advance.
+In medical vocabularies, this would mean, for example, creating all variants of all possible disease as terms in the vocabulary.</p>
+
+<p>Third, a small number of necessary terms could be provided which users piece together to represent a meaning.
+This approach is known as post-coordination<label for="prepost" class="margin-toggle sidenote-number"></label><input type="checkbox" id="prepost" class="margin-toggle" /><span class="sidenote">Post-coordination can be contrasted with pre-coordination, the inclusion of higher-level concepts in a vocabulary. The first and second approaches mentioned here are examples of pre-coordination.</span>
+.</p>
+
+<p>Regardless of which approach is taken, a high-quality controlled medical vocabulary should be as comprehensive as possible and use  a defined method for adding missing terms.</p>
+
+<h2 id="concept-orientation">Concept orientation</h2>
+
+<p><span class="newthought">Concept orientation</span> means that items in the vocabulary correspond to a particular meaning.</p>
+
+<p>Specifically, each concept corresponds to exactly one meaning and each meaning corresponds to no more than one concept<label for="desid2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="desid2" class="margin-toggle" /><span class="sidenote">A vague term does not correspond to a meaning. An ambiguous term corresponds to multiple meanings. A redundancy means one meaning corresponds to multiple terms. Concept orientation means a vocabulary has neither vague, ambiguous, nor redundant terms.</span>
+.</p>
+
+<h2 id="concept-permanence">Concept permanence</h2>
+
+<p><label for="permanence" class="margin-toggle">⊕</label>
+<input type="checkbox" id="permanence" class="margin-toggle" />
+<span class="marginnote"><a href="/course-notes/page/f19-symbolic/img/permanence.png"><img class="fullwidth" src="/course-notes/page/f19-symbolic/img/permanence.png" alt="As an example, the term Non-A, Non-B Hepatitis is not in current medical use. However, Hepatitis C is not equivalent to the archaic term. Some patients previously coded with the archaic term have Hepatitis C, so it is a child concept of the archaic concept. &lt;br&gt;(Image: Cimino JJ. Symbolic Methods slides. Lecture given 2019-09-17.)" /></a><br />
+    As an example, the term Non-A, Non-B Hepatitis is not in current medical use. However, Hepatitis C is not equivalent to the archaic term. Some patients previously coded with the archaic term have Hepatitis C, so it is a child concept of the archaic concept. <br />(Image: Cimino JJ. Symbolic Methods slides. Lecture given 2019-09-17.)
+</span></p>
+
+<p><span class="newthought">Once created,</span> concepts should never be deleted.
+Unnecessary concepts can be indicated as such, but a concept’s meaning cannot change.
+Concept permanence is important so that previous knowledge can be interpreted unambiguously.</p>
+
+<h2 id="nonsemantic-concept-identifiers">Nonsemantic concept identifiers</h2>
+
+<p><span class="newthought">Every concept</span> in a vocabulary should have a unique identifier.</p>
+
+<p>Concepts, as such, are not equivalent to specific words or phrases.
+The words or phrases used to refer to a concept can change while the concept’s meaning does not.
+Therefore, a concept’s name should not be chosen as its identifier.</p>
+
+<p>Identifiers that take into account the hierarchical relationships between concepts should also not be used, for several reasons.
+First, hierarchical identifiers are unnecessary as the identifiers for concepts need not be exposed to users.
+Second, assigning identifiers in a strictly hierarchical fashion is impossible when concepts can have multiple parents<label for="desid2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="desid2" class="margin-toggle" /><span class="sidenote">Polyhierarchy means that concepts can have multiple parents. This is described further in desideratum 5, polyhierarchy.</span>
+.
+Third, fixed-length hierarchical identifiers can be insufficient if a concept has a large number of direct children.
+Fourth, knowledge is dynamic, and a hierarchical identification system could be broken by reclassifying concepts, even if each concept has only a single parent.</p>
+
+<h2 id="polyhierarchy">Polyhierarchy</h2>
+
+<p><label for="polyhierarchy" class="margin-toggle">⊕</label>
+<input type="checkbox" id="polyhierarchy" class="margin-toggle" />
+<span class="marginnote"><a href="/course-notes/page/f19-symbolic/img/polyhierarchy.png"><img class="fullwidth" src="/course-notes/page/f19-symbolic/img/polyhierarchy.png" alt="Example of a disease polyhierarchy. &lt;br&gt;(Image: Cimino JJ. Symbolic Methods slides. Lecture given 2019-09-17.)" /></a><br />
+    Example of a disease polyhierarchy. <br />(Image: Cimino JJ. Symbolic Methods slides. Lecture given 2019-09-17.)
+</span></p>
+
+<p><span class="newthought">Medical concepts</span> are inherently ill-suited for classification using a strict hierarchy.
+Many concepts could equally well be classified into multiple, distinct categories.
+Rather than having redundant concepts as children of separate parents, a polyhierarchy allows a single concept to have multiple parents.</p>
+
+<p>Polyhierarchy accurately captures the richness of medical knowledge in a way that would be impossible in a strict hierarchy without redundant concepts.</p>
+
+<h2 id="formal-definitions">Formal definitions</h2>
+
+<p><span class="newthought">Formal definitions</span> are structured concept definitions in relation to other concepts in a vocabulary.
+Cimino gives the following example of a formal disease definition:</p>
+
+<blockquote>
+  <p>“Pneumococcal Pneumonia” can be defined with a hierarchical (“is a”) link to the concept “Pneumonia” and a “caused by” link to the concept “Streptococcus pneumoniae”.</p>
+</blockquote>
+
+<p>With formal definitions implemented, the relationships among concepts in a controlled vocabulary can be divided into definitional and assertional relationships.
+Cimino gives the following example to illustrate the difference between definitional and assertional relationships:</p>
+
+<blockquote>
+  <p>[L]inking “Pneumococcal Pneumonia”, via the “caused by” relationship, to “Streptococcus pneumoniae” is definitional, while linking it, via a “treated with” relationship, to “Penicillin” would be assertional.</p>
+</blockquote>
+
+<h2 id="reject-not-elsewhere-classified">Reject “Not elsewhere classified”</h2>
+
+<p><span class="newthought">Concepts including</span> “not elsewhere classified” (“NEC”) should not be included in high-quality controlled medical vocabularies.
+Such concepts cannot have formal definitions except as the negation of other concepts.</p>
+
+<p>The inherent ambiguity of NEC terms means that their presence makes adding new terms very inelegant.
+This conflicts with desideratum 11, graceful evolution.</p>
+
+<p><label for="graceful" class="margin-toggle">⊕</label>
+<input type="checkbox" id="graceful" class="margin-toggle" />
+<span class="marginnote"><a href="/course-notes/page/f19-symbolic/img/graceful.png"><img class="fullwidth" src="/course-notes/page/f19-symbolic/img/graceful.png" alt="Example of NEC terms making term addition inelegant. When somatization disorder is added, a new NEC term becomes necessary. &lt;br&gt;(Image: Cimino JJ. Symbolic Methods slides. Lecture given 2019-09-17.)" /></a><br />
+    Example of NEC terms making term addition inelegant. When somatization disorder is added, a new NEC term becomes necessary. <br />(Image: Cimino JJ. Symbolic Methods slides. Lecture given 2019-09-17.)
+</span></p>
+
+<p>NEC terms correspond to a number of different meanings.
+To add new concepts that correspond to meanings subsumed in an NEC term, concept permanence requires that one make the new concept a child of the NEC term.
+However, to retain consistency, then, a new NEC term should be added a sibling of the added term.
+This process does not have any logical stopping criteria, so the careful use of NEC terms would create endless branches with new NEC terms and single sub-categorizations.</p>
+
+<h2 id="multiple-levels-of-granularity">Multiple levels of granularity</h2>
+
+<p><span class="newthought">Medical vocabularies</span> are used by many people for different purposes.
+A multipurpose vocabulary should have levels of granularity that are appropriate for multiple tasks.</p>
+
+<p>A high degree of specificity may be required for highly specialized tasks, while such granularity might be cumbersome for a more general task.
+A reusable vocabulary that supports multiple tasks should therefore have multiple levels of granularity.</p>
+
+<h2 id="multiple-consistent-views">Multiple consistent views</h2>
+
+<p><span class="newthought">Multipurpose</span> medical vocabularies should support multiple levels of granularity by providing purpose-specific views.</p>
+
+<p>For example, if a medical record system allows providers to enter diagnoses using a vocabulary, it may be desirable to restrict the visible concepts or relationships.</p>
+
+<p><label for="consistent" class="margin-toggle">⊕</label>
+<input type="checkbox" id="consistent" class="margin-toggle" />
+<span class="marginnote"><a href="/course-notes/page/f19-symbolic/img/consistent.png"><img class="fullwidth" src="/course-notes/page/f19-symbolic/img/consistent.png" alt="Example of consistent and inconsistent views. On the left, concept E has the same children after being artificially split into redundant concepts. On the right, E has different children, resulting in an inconsistent view. (Image: Cimino JJ. Methods of Information in Medicine. 1998;37(04/05):394-403. [doi:10.1055/s-0038-1634558](https://doi.org/10.1055/s-0038-1634558))" /></a><br />
+    Example of consistent and inconsistent views. On the left, concept E has the same children after being artificially split into redundant concepts. On the right, E has different children, resulting in an inconsistent view. (Image: Cimino JJ. Methods of Information in Medicine. 1998;37(04/05):394-403. <a href="https://doi.org/10.1055/s-0038-1634558">doi:10.1055/s-0038-1634558</a>)
+</span></p>
+
+<p>Additionally, if a polyhierarchy is artificially split for viewing in different contexts, the resulting redundant concepts must be identical.</p>
+
+<h2 id="ability-to-represent-context">Ability to represent context</h2>
+
+<p><span class="newthought">Cimino proposes</span> that a fully contextualized medical vocabulary needs to represent three types of knowledge: definitional, assertional, and contextual<label for="context" class="margin-toggle sidenote-number"></label><input type="checkbox" id="context" class="margin-toggle" /><span class="sidenote">We discussed definitional knowledge and assertional knowledge under desideratum 6, formal definitions.</span>
+.</p>
+
+<p>Contextual knowledge refers to the circumstances in which terms appear or come to appear.
+For example, a single diagnosis code in a patient record alone lacks context.
+Information about when a diagnosis was recorded, such as an episode of care within a patient encounter makes the information more comprehensive.</p>
+
+<p>One way to implement contextualization is by adding new, circumstance-describing terms to the vocabulary itself.</p>
+
+<p>Another reason for including context is to restrict the possible uses of a vocabulary.
+Certain types of terms should only have certain types relationships, which should only connect to certain types of other terms.
+This kind of restriction introduces a grammar of usage, which is very helpful for a comprehensive vocabulary.</p>
+
+<h2 id="graceful-evolution">Graceful evolution</h2>
+
+<p><span class="newthought">Medical knowledge evolves.</span>
+Even a vocabulary that perfectly conforms to all the previous desiderata can only represent current medical knowledge.</p>
+
+<p>Designers and maintainers should be conscientious about updating their vocabularies.
+Change must take place, at least as knowledge progresses, but changes should be purposeful<label for="evol" class="margin-toggle sidenote-number"></label><input type="checkbox" id="evol" class="margin-toggle" /><span class="sidenote">Cimino gives examples of good and bad reasons for changing a vocabulary. Good: “[S]imple addition, refinement, precoordination, disambiguation, obsolescence, discovered redundancy, and minor name changes.” Bad: “[Adding] redundancy, major name changes, code reuse, and changed codes”</span>
+ and well-documented.</p>
+
+<p>Ideas we previously discussed are also relevant here.
+Changes made to a vocabulary should maintain conformance to principles like concept permanence, nonredundancy, nonambiguity, nonvagueness.</p>
+
+<p>In short, graceful evolution means that changes shouldn’t violate the other desidera.</p>
+
+<h2 id="recognition-of-redundancy">Recognition of redundancy</h2>
+
+<p><span class="newthought">Redundancy is</span> when multiple concepts correspond to the same meaning<label for="syn" class="margin-toggle sidenote-number"></label><input type="checkbox" id="syn" class="margin-toggle" /><span class="sidenote">Concepts must not overlap. But concepts can have attributes such as synonyms, translations, and abbreviations. Synonyms are very helpful, but they should map to non-redundant concepts.</span>
+.
+While it may seem like redundancy could be avoided by being very careful when creating new terms, redundancy can be an inevitable consequence of evolution.</p>
+
+<p>Pre-coordinated concepts are higher-level entities included in a vocabulary.
+A responsive development team may wish to add pre-coordinated terms that capture the most commonly-used post-coordinations.
+Alternatively, pre-coordinated terms might be created as medical knowledge evolves.</p>
+
+<p>Regardless of the reason for introducing new pre-coordinated concepts, they can easily introduce redundancy<label for="redund" class="margin-toggle sidenote-number"></label><input type="checkbox" id="redund" class="margin-toggle" /><span class="sidenote">Cimino gives the following example: users post-coordinate left lower lobe pneumonia using separate terms for “pneumonia” and “left lower lobe”.
+Later, “left lower lobe pneumonia” is added as a new concept.
+This creates a redundancy, as users could select either the new pre-coordinated term or could post-coordinate the meaning as previously.</span>
+.</p>
+
+<p>Formal concept definitions allow introduced redundancies to be recognized.
+For example, a newly-introduced pre-coordinated term should be defined using the concepts used to represent it using post-coordination.</p>
 
 
 
     </article>
-    <span class="print-footer">Desiderata - Michael Zietz</span>
+    <span class="print-footer">Desiderata for medical vocabularies - Michael Zietz</span>
     <footer>
   <hr class="slender">
   <ul class="footer-links">
@@ -71,7 +282,7 @@
         <a href="/feed"><span class="icon-feed"></span></a>
       </li>
      -->
-    <a href="/course-notes ">Other courses</a>
+    <a href="/course-notes">Other courses</a>
   </ul>
 <div class="credits">
 <span>&copy; 2019 &nbsp;&nbsp;Michael Zietz</span></br> <br>

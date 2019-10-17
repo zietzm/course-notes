@@ -8,7 +8,7 @@ These notes are for BINF 4003 - Methods III: Symbolic Methods, taught in the Fal
 
 ## Overview
 
-1. [Introduction](introduction): What are symbolic methods? Data-Information-Knowledge hierarchy, semantic interoperability, "curly braces problem".
+1. [Introduction](introduction): What are symbolic methods? Data-Information-Knowledge hierarchy, interoperability, "curly braces problem".
 
 2. [Knowledge representation](knowl-rep): Medical knowledge representations, closed vs open world assumptions, reference vs interface terminologies.
 
