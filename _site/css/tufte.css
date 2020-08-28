@@ -14,9 +14,7 @@
 
 /* This file contains all the constants for colors and font styles */
 /** Syntax highlighting styles */
-.highlight { margin-bottom: 15px; }
-
-.highlight { background: #fffff8; }
+.highlight { background: #f6f8fa; padding: 12px; margin: 0px 0px 0px 0px; }
 
 .highlight .c { color: #998; font-style: italic; }
 
@@ -189,7 +187,7 @@ blockquote * { font-size: 1.1rem; }
 
 blockquote p { line-height: 1.75rem; }
 
-blockquote footer { text-align: right; }
+blockquote footer { text-align: center; }
 
 /* ============================== Figures and Margins ============================== */
 figure.maincolumn { margin-bottom: 3em; }
@@ -231,7 +229,7 @@ p > a:link::selection, p > a:link::-moz-selection { text-shadow: 0.03em 0 #b4d5f
 /* ============================== Code ============================== */
 pre, code { font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 1rem; line-height: 1.42; margin-top: 1.42rem; -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */ }
 
-pre { overflow-x: auto; }
+pre { overflow-x: auto; background-color: #f6f8fa; }
 
 /* ============================== Miscellaneous ============================== */
 .sans { font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif; letter-spacing: .03em; }
@@ -294,11 +292,11 @@ nav.group a.active:after { content: "\000a0\0003e"; }
 
 header > nav a { font-size: 1.2rem; font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif; letter-spacing: 0.15em; text-transform: uppercase; color: #a00000; padding-top: 1.5rem; display: inline-block; float: left; margin-top: 0; margin-bottom: 0; padding-right: 2rem; vertical-align: baseline; }
 
-ul.footer-links, .credits { list-style: none; text-align: center; margin: 0 auto; }
+ul.footer-links, .credits { list-style: none; text-align: center; margin: 0 0; }
 
-ul.footer-links li { display: inline; padding: 0.5rem 0.25rem; }
+ul.footer-links li { display: inline; padding: 0rem 0rem; font-size: 14px; }
 
-.credits { padding: 1rem 0rem; }
+.credits { padding: 0rem 0rem; }
 
 .credits { font-family: "Gill Sans", "Gill Sans MT", "Lato", Calibri, sans-serif; }
 

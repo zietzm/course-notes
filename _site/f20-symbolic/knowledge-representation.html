@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Knowledge representation</title>
+  <meta name="description" content="">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" type="text/css" href="/course-notes/css/tufte.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/course-notes/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="http://localhost:4000/course-notes/f20-symbolic/knowledge-representation">
+
+  <link rel="alternate" type="application/rss+xml" title="Michael Zietz's Course Notes" href="http://localhost:4000/course-notes/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/course-notes/f20-symbolic/">Contents</a>
+	<a href="/course-notes/f20-symbolic/about">About</a>
+	</nav>
+</header>
+
+    <article class="group">
+      <br><br><br><br>
+<h1>Knowledge representation</h1>
+<p class="subtitle"></p>
+
+<p><br /></p>
+
+<p><span class="newthought">In the introduction</span> to this course we defined symbolic methods as methods which use existing and explicitly represented information and knowledge to gain further information and knowledge.</p>
+
+<p>In order to use existing knowledge, however, we must first find ways to represent knowledge in a meaningful and usable way.
+Only after knowledge representations have been developed can semantic interoperability be achieved<label for="know_rep1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="know_rep1" class="margin-toggle" /><span class="sidenote">Recall our proposition in the introduction that knowledge representation and interoperability are the two key problems in symbolic methods.</span>
+.</p>
+
+<h2 id="what-is-knowledge-representation">What is knowledge representation?</h2>
+
+<p><span class="newthought">A knowledge representation</span> is a framework for manifesting knowledge about the world in a structured manner.
+In computational fields like biomedical informatics, knowledge representations are generally usable by computers to perform reasoning tasks.</p>
+
+<p>Davis, Shrobe, and Szolovits characterize knowledge representations using five distinct roles that a representation can play<label for="kno_rep2" class="margin-toggle sidenote-number"></label><input type="checkbox" id="kno_rep2" class="margin-toggle" /><span class="sidenote">Davis R, Shrobe H, Szolovits P. AI magazine. 1993 Mar 15;14(1):17. (<a href="https://groups.csail.mit.edu/medg/ftp/psz/k-rep.html">link</a>)</span>
+.</p>
+
+<ol>
+  <li>A surrogate for the real world</li>
+  <li>A filter for certain aspects of the world</li>
+  <li>Part of an idea about what constitutes intelligent reasoning</li>
+  <li>A medium for efficient computation</li>
+  <li>A medium of human expression</li>
+</ol>
+
+<h2 id="open-vs-closed-world-assumptions">Open vs closed world assumptions</h2>
+
+<p><span class="newthought">One of the first</span> philosophical challenges encountered when creating a knowledge representation is how to handle uncertainty.
+In other words, do we currently have all the knowledge that we may ever want to have in our knowledge representation?</p>
+
+<p>The two answers to this question are known as the open and closed world assumptions.</p>
+
+<p>In the closed world assumption, all facts are known.
+This means that if a theoretically possible fact is not represented, it is false by assumption.</p>
+
+<p>Contrast the closed world assumption with the open world assumption, in which a fact may be true, even if it is not already known to be true.
+Fundamentally, the open world assumption means we assume that our knowledge is incomplete.</p>
+
+<p>In developing a biomedical knowledge representation, the choice of open or closed world assumption has real consequences.
+First, in the open world paradigm, concepts don’t have to be entirely distinct, and differences between concepts should be defined.
+Conversely, concepts are distinct in a closed world paradigm.
+Second, the open world assumption leads to more extensible and scalable knowledge representations, while the closed world assumption affords greater computational efficiency.
+Third, because the closed world assumption entails a number of constraints, closed world assumption knowledge representations are more easily validated.</p>
+
+<h2 id="reference-vs-interface">Reference vs interface</h2>
+
+<p><span class="newthought">How a knowledge</span> representation will be used is a practical consideration that must be taken into account when designing a representation.</p>
+
+<p>Terminologies are a type of knowledge representation, and they illustrate purpose-driven design.
+We split terminologies into two main types: reference terminologies and interface terminologies<label for="refinf" class="margin-toggle sidenote-number"></label><input type="checkbox" id="refinf" class="margin-toggle" /><span class="sidenote">Some authors include other types: aggregation terminologies, which enforce strict hierarchy and disjoint concepts and which are used for aggregating data into classes (Schulz S, et al. Studies in Health Technology and Informatics. 2017;245:940-4. <a href="https://doi.org/10.3233/978-1-61499-830-3-940">doi:10.3233/978-1-61499-830-3-940</a>), or administrative terminologies for health care administration and billing (Kanter AS, et al. Studies in Health Technology and Informatics. 2008;136:27.)</span>
+.</p>
+
+<p>Reference terminologies are concept-based, polyhierarchical, controlled medical vocabularies.
+SNOMED-CT and RxNorm are examples of reference terminologies.</p>
+
+<p>Interface terminologies<label for="interface" class="margin-toggle sidenote-number"></label><input type="checkbox" id="interface" class="margin-toggle" /><span class="sidenote">In the context of biomedical informatics, “interface terminology” and “clinical interface terminology” are often used interchangeably.</span>
+ are less strictly defined, and exist to support the entry of clinical data into computer tools, such as electronic health records or order-entry systems.
+<a href="https://www.imohealth.com/imo-core/">IMO Core</a> is an example of an interface terminology.</p>
+
+<p>In general, the structure, content, and constraints of knowledge representations should by informed by the purpose for which they are created.</p>
+
+<h2 id="pre--and-post-coordination">Pre- and post-coordination</h2>
+
+<p><span class="newthought">The implementation</span> of a medical vocabulary ultimately requires content.
+Unfortunately, no vocabulary can ever contain all medical concepts and relationships.
+There will always be medical thoughts which cannot be fully represented using existing terms.</p>
+
+<p>There are two main approaches to representing complex meanings using an incomplete vocabulary: pre-coordination and post-coordination.</p>
+
+<p>In pre-coordination, medical thoughts are represented by single concepts.
+To include a complex thought in the vocabulary, a new term is created that represents the thought.</p>
+
+<p>Post-coordination is more flexible, allowing users to combine multiple terms to represent a complex thought.</p>
+
+<p>Both approaches have advantages and disadvantages.
+Pre-coordination can be simpler for users, but it requires either the anticipation of all possible term combinations or a vocabulary maintenance team that is responsive to requests for new terms.
+Post-coordination is more flexible and rapidly scalable, but it can be inconvenient if users want repeatedly to enter complex thoughts that contain several terms.</p>
+
+<p>There are three types of post-coordination: refinement, qualification, and combination.
+Refinement increases the specificity of a concept.
+Qualification adds attributes not present in the original concept.
+Combination uses multiple concepts to represent a given meaning.</p>
+
+
+
+    </article>
+    <span class="print-footer">Knowledge representation - Michael Zietz</span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links" style="margin-left: auto; margin-right: auto; text-align: center;">
+      <a style="font-size: 25px;" href="/course-notes/">Other courses</a>
+
+      <br>
+      <br>
+
+      <li>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+        </a>
+        <br />
+        These notes are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+      </li>
+  </ul>
+</footer>
+
+  </body>
+</html>
