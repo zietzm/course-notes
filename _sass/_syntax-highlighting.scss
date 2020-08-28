@@ -1,14 +1,17 @@
 /**
  * Syntax highlighting styles
  */
-$spacing-unit:     30px;
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-}
+// $spacing-unit:     0px;
+// %vertical-rhythm {
+//     margin-bottom: $spacing-unit / 2;
+// }
 
 .highlight {
-    background: #fffff8;
-    @extend %vertical-rhythm;
+    background: #f6f8fa;
+    padding: 12px;
+    margin: 0px 0px 0px 0px;
+
+    // @extend %vertical-rhythm;
 
     .c     { color: #998; font-style: italic } // Comment
     .err   { color: #a61717; background-color: #e3d2d2 } // Error

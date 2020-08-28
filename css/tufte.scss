@@ -130,7 +130,7 @@ blockquote p, pre { padding-right: 0 10%; }
 
 blockquote * { font-size: 1.1rem; }
 blockquote p { line-height: 1.75rem; }
-blockquote footer { text-align: right; }
+blockquote footer { text-align: center; }
 
 /* ==============================
  *      Figures and Margins
@@ -253,7 +253,10 @@ pre, code {
     line-height: 1.42;
     margin-top: 1.42rem;
     -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */ }
-pre { overflow-x: auto; }
+pre {
+    overflow-x: auto;
+    background-color: #f6f8fa;
+}
 
 /* ==============================
  *         Miscellaneous
@@ -471,14 +474,15 @@ header > nav a {
 ul.footer-links, .credits {
     list-style: none;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 0;
 }
 ul.footer-links li {
     display: inline;
-    padding: 0.5rem 0.25rem;
+    padding: 0rem 0rem;
+    font-size: 14px;
 }
 .credits {
-    padding: 1rem 0rem;
+    padding: 0rem 0rem;
 }
 
 // change font color for credit links in footer

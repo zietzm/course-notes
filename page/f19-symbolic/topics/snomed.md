@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SNOMED
+title: SNOMED-CT
 permalink: /f19-symbolic/snomed
 ---
 <br>

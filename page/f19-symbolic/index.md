@@ -16,12 +16,14 @@ These notes are for BINF 4003 - Methods III: Symbolic Methods, taught in the Fal
 
 ## Specific terminologies and tools
 
-1. [SNOMED](snomed): Design, structure, limitations, adoption, SNOMED clinical terms (SNOMED CT).
+1. [SNOMED-CT](snomed): Design, structure, limitations, adoption, SNOMED clinical terms (SNOMED CT).
 
-2. [ICD](icd): Design, structure, limitations, adoption, versions: ICD-9, ICD-10, ICD-11.
+---
 
-3. [UMLS](umls): Three knowledge sources: Metathesaurus, Semantic Network, SPECIALIST Lexicon and Lexical Tools. Purpose, data sources, use cases.
+**Incomplete**
 
-4. [RxNorm](rxnorm): Design, structure, data sources, use cases. RxNorm vs RxTerm.
+2. ICD: Design, structure, limitations, adoption, versions: ICD-9, ICD-10, ICD-11.
 
+3. UMLS: Three knowledge sources: Metathesaurus, Semantic Network, SPECIALIST Lexicon and Lexical Tools. Purpose, data sources, use cases.
 
+4. RxNorm: Design, structure, data sources, use cases. RxNorm vs RxTerm.

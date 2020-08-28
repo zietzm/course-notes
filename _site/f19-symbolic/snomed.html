@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SNOMED-CT</title>
+  <meta name="description" content="">
+
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
+  
+    <link href='//fonts.googleapis.com/css?family=Lato:400,400italic' rel='stylesheet' type='text/css'>
+  
+
+  <!-- Load up MathJax script if needed ... specify in /_data/options.yml file-->
+  
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <link rel="stylesheet" type="text/css" href="/course-notes/css/tufte.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/course-notes/css/print.css" media="print"> -->
+
+  <link rel="canonical" href="http://localhost:4000/course-notes/f19-symbolic/snomed">
+
+  <link rel="alternate" type="application/rss+xml" title="Michael Zietz's Course Notes" href="http://localhost:4000/course-notes/feed.xml" />
+</head>
+
+  <body>
+    <!--- Header and nav template site-wide -->
+<header>
+    <nav class="group">
+	<a href="/course-notes/f19-symbolic/">Contents</a>
+	<a href="/course-notes/f19-symbolic/about">About</a>
+	</nav>
+</header>
+
+    <article class="group">
+      <br><br><br><br>
+<h1>SNOMED-CT</h1>
+<p class="subtitle"></p>
+
+<p><br /></p>
+
+<blockquote>
+  <p>SNOMED International is a not-for-profit organization that owns, administers and develops SNOMED CT, the world’s most comprehensive clinical terminology.</p>
+
+  <p>– <cite>SNOMED website</cite><label for="quote" class="margin-toggle sidenote-number"></label><input type="checkbox" id="quote" class="margin-toggle" /><span class="sidenote">“Our Organization” (<a href="https://www.snomed.org/our-organization/our-organization">link</a>)</span></p>
+</blockquote>
+
+<p><br /></p>
+
+<p><span class="newthought">SNOMED CT</span><label for="abbrev" class="margin-toggle sidenote-number"></label><input type="checkbox" id="abbrev" class="margin-toggle" /><span class="sidenote">SNOMED was previously an abbreviation for <strong>S</strong>ystematized <strong>No</strong>menclature of <strong>Med</strong>icine, though this meaning has since been removed for branding purposes.</span>
+ is a clinical reference terminology.
+It is considered to be one of the best maintained and most comprehensive clinical terminology available.
+SNOMED CT has rich, formal definitions, and it is in use throughout the world.</p>
+
+<h2 id="desiderata-compliant">Desiderata compliant</h2>
+
+<p><span class="newthought">All of</span> Cimino’s desiderata are manifest in SNOMED CT<label for="desiderata" class="margin-toggle sidenote-number"></label><input type="checkbox" id="desiderata" class="margin-toggle" /><span class="sidenote">In fact, SNOMED CT’s Editorial Guide has <a href="https://confluence.ihtsdotools.org/display/DOCEG/Medical+Vocabularies+-+J.+Cimino">an appendix</a> outlining how SNOMED CT meets all of Cimino’s requirements.</span>
+.</p>
+
+<ol>
+  <li>
+    <p>SNOMED CT is the most <strong>comprehensive</strong> clinical terminology in the world, supporting both pre- and post-coordination.
+Post-coordinated expressions greatly expand SNOMED CT’s coverage and are specified using the same compositional grammar used to define pre-coordinated concepts<label for="snomedpost" class="margin-toggle sidenote-number"></label><input type="checkbox" id="snomedpost" class="margin-toggle" /><span class="sidenote">More information can be found in the subsection on post coordination within the SNOMED CT Starter Guide’s <a href="https://confluence.ihtsdotools.org/display/DOCSTART/7.+SNOMED+CT+Expressions">section on expressions</a>.</span>
+.</p>
+  </li>
+  <li>
+    <p>SNOMED CT is a <strong>concept-oriented</strong> terminology.
+Concept-orientation means that SNOMED CT assigns exactly one meaning per term and one term per meaning.</p>
+  </li>
+  <li>
+    <p>SNOMED CT maintains <strong>concept permanence</strong>, including identifier permanence.
+Concepts can be flagged as inactive<label for="active" class="margin-toggle sidenote-number"></label><input type="checkbox" id="active" class="margin-toggle" /><span class="sidenote">“Meaning of the Active Field” (<a href="https://confluence.ihtsdotools.org/display/DOCRELFMT/3.1.4+Meaning+of+the+Active+Field">link</a>)</span>
+ but are never removed.</p>
+  </li>
+  <li>
+    <p>Concepts in SNOMED CT have unique, numeric, <strong>nonsemantic identifiers</strong>.<label for="nonsem" class="margin-toggle sidenote-number"></label><input type="checkbox" id="nonsem" class="margin-toggle" /><span class="sidenote">For example, the concept assigned SCTID 118600007 has as its preferred term, “Malignant lymphoma (disorder)”.</span></p>
+  </li>
+  <li>
+    <p>SNOMED CT supports <strong>polyhierarchy</strong>, meaning concepts can have multiple parents.<label for="polyhier" class="margin-toggle sidenote-number"></label><input type="checkbox" id="polyhier" class="margin-toggle" /><span class="sidenote">For example, “Malignant lymphoma (disorder)” has two parents: “Lymphoreticular tumor (disorder)” and “Malignant tumor of lymphoid, hemopoietic AND/OR related tissue (disorder)”.</span></p>
+  </li>
+  <li>
+    <p>As mentioned previously, SNOMED CT has <strong>formal concept definitions</strong>.<label for="formaldef" class="margin-toggle sidenote-number"></label><input type="checkbox" id="formaldef" class="margin-toggle" /><span class="sidenote">For example, “Malignant lymphoma (disorder)” is defined using two axioms: “Is a (attribute)  –  Disease (disorder)” and “Associated morphology (attribute)  –  Malignant lymphoma - category (morphologic abnormality)”</span></p>
+  </li>
+  <li>
+    <p>SNOMED CT does not allow terms with the phrase, <strong>“Not elsewhere classified.”</strong></p>
+  </li>
+  <li>
+    <p><strong>Multiple granularities</strong> are possible with SNOMED CT, thanks to its hierarchical organization and ability to navigate from less- to more-specific concepts.</p>
+  </li>
+  <li>
+    <p>SNOMED CT provides <strong>multiple consistent views</strong><label for="cons" class="margin-toggle sidenote-number"></label><input type="checkbox" id="cons" class="margin-toggle" /><span class="sidenote">Other components of this desideratum are left to software implementation, such as showing certain users only less granular concepts, etc.</span>
+, meaning that a concept is identically represented regardless of how it was reached in the hierarchy.</p>
+  </li>
+  <li>
+    <p><strong>Context representation</strong>—as explained by Cimino and as explored in the previous section—has two main components.
+First, controlled vocabularies should include a grammar of use that restricts what types of statements are possible.
+SNOMED CT has a concept model that restricts possible types of relationships between specific types of concepts.
+Second, controlled vocabularies should be able to represent clinical context: for example, the circumstances in which a diagnosis was made.
+SNOMED CT includes codes for many clinical circumstances under the second-level concept, “Administrative statuses (finding)”<label for="context" class="margin-toggle sidenote-number"></label><input type="checkbox" id="context" class="margin-toggle" /><span class="sidenote">For example, “Appointment date (finding)” or “Patient new to provider (finding)”</span>
+.</p>
+  </li>
+  <li>
+    <p>SNOMED CT has had a <strong>graceful evolution</strong>, adhering to principles of concept and identifier permanence, non-redundancy, etc.</p>
+  </li>
+  <li>
+    <p>SNOMED CT’s rich formal definitions allow <strong>redundant concept recognition</strong><label for="redundant" class="margin-toggle sidenote-number"></label><input type="checkbox" id="redundant" class="margin-toggle" /><span class="sidenote">For example, “Mixed myocardial ischemia and infarction (disorder)” is defined using both “Is a (attribute)”  –  “Myocardial ischemia (disorder)” and “Is a (attribute)”  –  “Myocardial infarction (disorder)”. If these terms were not in the definition, there would be redundancy between the pre- and post-coordinated representations of the meaning.</span>
+.</p>
+  </li>
+</ol>
+
+<h2 id="basic-unitsthe-building-blocks-and-fundamental-structure-of-snomed-ct-are-specified-by-its-logical-model">Basic units<label for="redundant" class="margin-toggle sidenote-number"></label><input type="checkbox" id="redundant" class="margin-toggle" /><span class="sidenote">The building blocks and fundamental structure of SNOMED CT are specified by its “logical model”.</span></h2>
+
+<p><label for="" class="margin-toggle">⊕</label>
+<input type="checkbox" class="margin-toggle" />
+<span class="marginnote"><a href="/course-notes/page/f19-symbolic/img/snomed.png"><img class="fullwidth" src="/course-notes/page/f19-symbolic/img/snomed.png" alt="Diagram of SNOMED CT from the [Starter Guide](https://confluence.ihtsdotools.org/display/DOCSTART/SNOMED+CT+Starter+Guide)." /></a><br />
+    Diagram of SNOMED CT from the <a href="https://confluence.ihtsdotools.org/display/DOCSTART/SNOMED+CT+Starter+Guide">Starter Guide</a>.
+</span></p>
+
+<p><span class="newthought">Concepts</span> are the basic unit in SNOMED CT.
+Relationships connect concepts<label for="relconcept" class="margin-toggle sidenote-number"></label><input type="checkbox" id="relconcept" class="margin-toggle" /><span class="sidenote">Relationships themselves are concepts, so a relationship between concepts is actually a triplet of concepts: (concept, relationship, concept).</span>
+, while descriptions connect concepts to additional information.</p>
+
+<h2 id="concepts">Concepts</h2>
+
+<p><span class="newthought">Concepts</span> are defined using relationships.
+Each type of concept has a specified set of relationship types that are possible and that can be used for definition.</p>
+
+<p>All concepts have a nonsemantic, unique, numeric identifier<label for="relconcept" class="margin-toggle sidenote-number"></label><input type="checkbox" id="relconcept" class="margin-toggle" /><span class="sidenote">An SCTID is between 6 and 18 digits. (<a href="https://confluence.ihtsdotools.org/display/DOCRELFMT/6.1+SCTID+Data+Type">source</a>)</span>
+.</p>
+
+<p>Concepts in SNOMED CT are either primitive or fully defined.
+Full definition means that a concept’s formal definition is unique and that any other concept meeting the definition is a subtype.
+Primitive concepts are those which are not fully defined.</p>
+
+<h2 id="relationships">Relationships</h2>
+
+<p><span class="newthought">Relationships</span> connect concepts.
+There are two classes of relationships in SNOMED CT: subtype and attribute.</p>
+
+<p>“Is a” relationships are the subtype (or “hierarchical”) relationships in SNOMED CT.
+Increasingly granular concepts can be found by traversing “is a” relationships from the top level.</p>
+
+<p>Attribute relationships include all other relationships.
+There are 98 approved types of attributes<label for="redundant" class="margin-toggle sidenote-number"></label><input type="checkbox" id="redundant" class="margin-toggle" /><span class="sidenote">There are also 192 unapproved attribute types, though these are not described further here. (<a href="https://confluence.ihtsdotools.org/display/DOCTSG/10.1.4+Sanctioned+and+unsanctioned+refinement">More information on unapproved attributes</a>)</span>
+.
+Attribute relationships include information like location, composition, context, numerical units, etc.
+These pieces of information are still relationships, though, meaning they connect concepts to one another<label for="attrib" class="margin-toggle sidenote-number"></label><input type="checkbox" id="attrib" class="margin-toggle" /><span class="sidenote">One way to distinguish attribute from “is a” relationships is that attributes connect concepts not in the same hierarchy, meaning not connected on the same path.</span>
+.</p>
+
+<p>Attribute relationships are restricted in their application.
+Each relationship type has a defined domain and range.
+A relationship type’s domain is the hierarchy to which it can be applied.
+Its range is the hierarchy of allowed target concepts.</p>
+
+<h2 id="descriptions">Descriptions</h2>
+
+<p>Descriptions are textual information associated with particular concepts.
+Descriptions also have unique, nonsemantic, numeric identifiers.
+There are two types of descriptions in SNOMED CT: a fully specified name and synonyms.</p>
+
+<p>A concept’s fully specified name is a unique string giving the concept’s meaning.
+Synonyms are terms that can be used to refer to a concept.
+The fully specified name and one synonym are marked as preferred, while other synonyms are marked as acceptable<label for="languages" class="margin-toggle sidenote-number"></label><input type="checkbox" id="languages" class="margin-toggle" /><span class="sidenote">Each translation of SNOMED CT has its own descriptions, as well as labels for preferred synonyms.</span>
+.</p>
+
+<!-- ## Concept model
+
+<span class="newthought">The concept model</span> specifies the top level concepts in SNOMED CT, the ways that concepts can be defined, and the ways that concepts can relate to one another, depending on the hierarchies in which they are located.
+
+The root concept in SNOMED CT is "SNOMED CT Concept (SNOMED RT+CTV3)".
+This root has 19 children, called "top-level hierarchies"<label for="meta" class="margin-toggle sidenote-number"></label><input type="checkbox" id="meta" class="margin-toggle"><span class="sidenote">One top level hierarchy, "SNOMED CT Model Component (metadata)" is an ancestor of relationship and description type concepts.</span>
+.
+
+<label for="" class="margin-toggle">&#8853;</label>
+<input type="checkbox" id="" class="margin-toggle">
+<span class="marginnote"><a href="/course-notes/page/f19-symbolic/img/dom_rng.png"><img class="fullwidth" src="/course-notes/page/f19-symbolic/img/dom_rng.png" alt="Examples of domain and range from the [Starter Guide](https://confluence.ihtsdotools.org/display/DOCSTART/SNOMED+CT+Starter+Guide)." /></a><br>
+    Examples of domain and range from the [Starter Guide](https://confluence.ihtsdotools.org/display/DOCSTART/SNOMED+CT+Starter+Guide).
+</span>
+ -->
+
+<h2 id="expressions">Expressions</h2>
+
+<p><span class="newthought">Clinical thoughts</span> are highly complex and are often more specific than available concepts.
+SNOMED CT suppports extended clinical expressions using both pre- and post-coordination.</p>
+
+<p>Expressions are constructed using a structured syntax.
+The purpose of this structure is to make expressions machine-readable.</p>
+
+<p>The SNOMED CT compositional grammar is used for both pre- and post-coordinated terms.
+Ultimately the only real difference between a pre- and post-coordinated expression is that pre-coordinated expressions have a unique identifier.</p>
+
+<hr />
+
+<p>For example, the pre-coordinated concept “laparoscopic emergency appendectomy” is defined using three relationships:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>116680003|is a| = 80146002|appendectomy|
+260870009|priority|=25876001|emergency|
+425391005|using access device| = 86174004|laparoscope|
+</code></pre></div></div>
+
+<p>The same term could be represented using post-coordination as the following:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>80146002|appendectomy|:260870009|priority|=25876001|emergency|, 425391005|using access device|=86174004|laparoscope|
+</code></pre></div></div>
+<hr />
+
+<h2 id="use-cases">Use cases</h2>
+
+<p>SNOMED CT’s well-maintained polyhierarchy makes it appropriate for data aggregation and analysis.
+Its comprehensiveness makes it appropriate for clinical documentation, and makes it an appropriate target for concept extraction.</p>
+
+
+
+    </article>
+    <span class="print-footer">SNOMED-CT - Michael Zietz</span>
+    <footer>
+  <hr class="slender">
+  <ul class="footer-links" style="margin-left: auto; margin-right: auto; text-align: center;">
+      <a style="font-size: 25px;" href="/course-notes/">Other courses</a>
+
+      <br>
+      <br>
+
+      <li>
+        <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+          <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+        </a>
+        <br />
+        These notes are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+      </li>
+  </ul>
+</footer>
+
+  </body>
+</html>
