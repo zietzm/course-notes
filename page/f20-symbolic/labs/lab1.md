@@ -83,7 +83,7 @@ Here are two such terminologies.{% include sidenote.html id="pizza1" note="I'm o
 
 
 Please answer the following questions in your submission.
-A couple sentences could be sufficient.
+A couple sentences for each point could be sufficient.
 
 1. Which terminology is more understandable to you, and why?
 2. Which terminology do you think would be easier to add the [remaining 31 types of pizza](https://www.foodrepublic.com/2015/11/18/have-you-tried-these-40-types-of-pizza/) into, and why?
