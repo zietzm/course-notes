@@ -112,3 +112,9 @@ WHERE vocabulary_id LIKE 'ICD10%' AND concept_code LIKE 'I25%'
 
 As always, you're free to complete this lab using whatever data resources you'd like.
 Just throwing it out there, though: learning to use the OMOP tables can be a great boon, especially for tasks like this.
+
+Also keep in mind that not all the examples you'll encounter in this lab will follow just a single ICD code with its descendants.
+Don't always accept the first code Google gives you.
+
+If you decide to use Athena for the first part, you'll want to use the "VOCAB" filter on the left and select "ICD10" and "ICD10CM".
+Also, be sure to use concept *codes*, which are from ICD, not concept *ids*, which are from OMOP.

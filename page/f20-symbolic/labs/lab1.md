@@ -11,8 +11,9 @@ There are three parts to this lab: setting up an account, connecting to the clas
 You're free to do this lab in whatever format and using whatever tools you think are reasonable.
 Just submit a PDF on Canvas.
 
+## Instructions
 
-## Set up UMLS account
+### Set up UMLS account
 
 {% include marginfigure.html id="umls-sidefig" url="page/f20-symbolic/img/UMLS_screenshot.png" description="Example of what you should see after logging in." %}
 
@@ -23,7 +24,7 @@ Accept the license, fill in your information, and check that you can log in to t
 
 Nothing to submit for this.
 
-## Connect to the class database
+### Connect to the class database
 
 I've created a database that we'll use for several labs this semester.
 {% include sidenote.html id="Database" note="It's a [MySQL 8.0](https://dev.mysql.com/doc/refman/8.0/en/) database hosted on [AWS RDS](https://aws.amazon.com/rds/).
@@ -59,7 +60,7 @@ Just tell me what condition you chose, what query you ran, and how many concepts
 
 
 
-## Terminology example
+### Terminology example
 
 <span class="newthought">Imagine we wanted</span> to make a terminology about pizza.
 Here are two such terminologies.{% include sidenote.html id="pizza1" note="I'm only going to include the first 9 of 40 types of pizza from a [diagram by Jess Kapadia](https://www.foodrepublic.com/2015/11/18/have-you-tried-these-40-types-of-pizza/)." %}
