@@ -93,6 +93,8 @@ A couple sentences for each point could be sufficient.
 
 **That's all for this lab!**
 
+◼️
+
 ---
 
 

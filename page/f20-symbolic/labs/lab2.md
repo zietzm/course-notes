@@ -31,6 +31,7 @@ See also: [Suggestion](#suggestion)" %}
 Please submit a table in a machine-readable format using the schema in the example below.{% include sidenote.html id="sub" note="I'm not picky about the format.
 Anything reasonable is acceptable: a link to a public Google sheet, a CSV/TSV file, an Excel spreadsheet, etc." %}
 
+◼️
 
 Here's an example of what I mean.
 
