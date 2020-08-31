@@ -30,14 +30,14 @@ These notes are for BINF 4003 - Methods III: Symbolic Methods, taught in the Fal
 
 ## Labs
 
-I've tried to make the examples you'll work through both practical and helpful.
+I've tried to make the examples you'll work through both practical and informative.
 We'll work through lots of things, including actual database query design problems I've encountered in research.
 
 1. [Lab 1: Setup and test computing environment, improve example terminology](lab1)
 
-2. [Lab 2: Phenotyping in ICD-9](lab2)
+2. [Lab 2: Defining phenotypes in ICD-10](lab2)
 
-3. [Lab 3: ICD-10 and SNOMED-CT](lab3)
+3. [Lab 3: Using SNOMED-CT to define phenotypes in ICD-10](lab3)
 
 4. [Lab 4: Example study on drug safety](lab4)
 

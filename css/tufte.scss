@@ -31,7 +31,8 @@ nav_exclude: true
     box-sizing: border-box;
 }
 
-html, body { height: 100%; }
+html { height: 100%; }
+body { min-height: 100%; }
 
 /* clearfix hack after Cederholm (group class name) */
 .group:after {

@@ -11,8 +11,9 @@ There are three parts to this lab: setting up an account, connecting to the clas
 You're free to do this lab in whatever format and using whatever tools you think are reasonable.
 Just submit a PDF on Canvas.
 
+## Instructions
 
-## Set up UMLS account
+### Set up UMLS account
 
 {% include marginfigure.html id="umls-sidefig" url="page/f20-symbolic/img/UMLS_screenshot.png" description="Example of what you should see after logging in." %}
 
@@ -23,7 +24,7 @@ Accept the license, fill in your information, and check that you can log in to t
 
 Nothing to submit for this.
 
-## Connect to the class database
+### Connect to the class database
 
 I've created a database that we'll use for several labs this semester.
 {% include sidenote.html id="Database" note="It's a [MySQL 8.0](https://dev.mysql.com/doc/refman/8.0/en/) database hosted on [AWS RDS](https://aws.amazon.com/rds/).
@@ -59,7 +60,7 @@ Just tell me what condition you chose, what query you ran, and how many concepts
 
 
 
-## Terminology example
+### Terminology example
 
 <span class="newthought">Imagine we wanted</span> to make a terminology about pizza.
 Here are two such terminologies.{% include sidenote.html id="pizza1" note="I'm only going to include the first 9 of 40 types of pizza from a [diagram by Jess Kapadia](https://www.foodrepublic.com/2015/11/18/have-you-tried-these-40-types-of-pizza/)." %}
@@ -83,7 +84,7 @@ Here are two such terminologies.{% include sidenote.html id="pizza1" note="I'm o
 
 
 Please answer the following questions in your submission.
-A couple sentences could be sufficient.
+A couple sentences for each point could be sufficient.
 
 1. Which terminology is more understandable to you, and why?
 2. Which terminology do you think would be easier to add the [remaining 31 types of pizza](https://www.foodrepublic.com/2015/11/18/have-you-tried-these-40-types-of-pizza/) into, and why?
@@ -91,6 +92,8 @@ A couple sentences could be sufficient.
 4. Can you think of any ways to improve Terminology 2?{% include sidenote.html id="pizza2" note="Don't stress too much on this one. This is one of the overall topics of the course." %}
 
 **That's all for this lab!**
+
+◼️
 
 ---
 
