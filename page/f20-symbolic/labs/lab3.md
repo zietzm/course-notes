@@ -42,6 +42,8 @@ If not, how did the sets of codes differ?
 Did you find it easier to find codes manually for ICD-10 or SNOMED-CT?
 Were there any obvious omissions for either method vs the other?
 
+Can you put into words why one might prefer the SNOMED → ICD approach over direct ICD?
+
 ◼️
 
 Here's an example of what I mean for parts 1 and 2.

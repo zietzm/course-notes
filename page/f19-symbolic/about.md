@@ -1,5 +1,5 @@
 ---
-layout: course-page
+layout: course-page-19
 title: About
 permalink: /f19-symbolic/about
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-19
 title: SNOMED-CT
 permalink: /f19-symbolic/snomed
 ---

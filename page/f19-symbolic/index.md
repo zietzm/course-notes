@@ -1,5 +1,5 @@
 ---
-layout: course-page
+layout: course-page-19
 title: Symbolic Methods
 permalink: /f19-symbolic/
 ---

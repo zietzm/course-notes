@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-19
 title: Desiderata for medical vocabularies
 permalink: /f19-symbolic/desiderata
 ---
