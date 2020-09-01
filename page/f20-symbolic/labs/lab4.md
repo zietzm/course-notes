@@ -37,6 +37,7 @@ Report the following:
 
 How many of these drugs can be mapped to RxNorm using ingredient names?
 What fraction of the drugs cannot be mapped in this way?
+Include the mapping from `drugname` to RxNorm code for 50 drugs (or as many as possible).
 
 Take five ingredients that could not be directly matched, and search for corresponding RxNorm concepts manually.
 Why were you not able to map these codes using ingredient names?{%
@@ -50,6 +51,8 @@ Pick a condition that lab tests can help you diagnose/rule out.{% include sideno
 Create a measurement-based, binary, OMOP phenotype definition for this condition.
 It doesn't have to be perfect, just enough to reasonably binarize cases and controls on the basis of lab measurements.
 You may report this phenotype in any reasonable format.{% include sidenote.html id="eg" note="For example, a SQL query that could be run against an OMOP MEASUREMENT table, or a table of LOINC codes and cutoff values (including units)." %}
+
+◼️
 
 ### Example
 
