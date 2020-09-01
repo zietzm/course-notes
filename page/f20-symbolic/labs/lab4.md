@@ -37,6 +37,7 @@ Report the following:
 
 How many of these drugs can be mapped to RxNorm using ingredient names?
 What fraction of the drugs cannot be mapped in this way?
+Include the mapping from `drugname` to RxNorm code for 50 drugs (or as many as possible).
 
 Take five ingredients that could not be directly matched, and search for corresponding RxNorm concepts manually.
 Why were you not able to map these codes using ingredient names?{%
