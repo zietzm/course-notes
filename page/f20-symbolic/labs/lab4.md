@@ -52,6 +52,8 @@ Create a measurement-based, binary, OMOP phenotype definition for this condition
 It doesn't have to be perfect, just enough to reasonably binarize cases and controls on the basis of lab measurements.
 You may report this phenotype in any reasonable format.{% include sidenote.html id="eg" note="For example, a SQL query that could be run against an OMOP MEASUREMENT table, or a table of LOINC codes and cutoff values (including units)." %}
 
+◼️
+
 ### Example
 
 Suppose I picked [proteinuria](https://labtestsonline.org/conditions/protein-urine-proteinuria).
