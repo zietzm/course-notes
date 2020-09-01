@@ -6,10 +6,10 @@ permalink: /f20-symbolic/lab9
 
 
 
-## Admin
+<!-- ## Admin
 
 ## Intro
 
 <span class="newthought">Start</span>
 
-## Instructions
+## Instructions -->

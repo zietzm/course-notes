@@ -106,10 +106,10 @@ Windows users could install the [MySQL shell](https://dev.mysql.com/doc/mysql-sh
 
 A more familiar alternative is to use a GUI application like [Sequel Pro](https://www.sequelpro.com/), [DataGrip](https://www.jetbrains.com/datagrip/), [DBeaver](https://dbeaver.io/), or [MySQL Workbench](https://www.mysql.com/products/workbench/).
 
-For programmatic access, I'd suggest any tool like R's [`DBI`](https://db.rstudio.com/dbi/) and [`RMariaDB`](https://rmariadb.r-dbi.org/), Python's [`sqlalchemy`](https://docs.sqlalchemy.org/en/13/dialects/mysql.html) and [`mysqlclient`](https://mysqlclient.readthedocs.io/).
+For programmatic access, I'd suggest any tool like R's [`dbplyr`](https://dbplyr.tidyverse.org/index.html), [`DBI`](https://db.rstudio.com/dbi/) and [`RMariaDB`](https://rmariadb.r-dbi.org/), Python's [`sqlalchemy`](https://docs.sqlalchemy.org/en/13/dialects/mysql.html) and [`mysqlclient`](https://mysqlclient.readthedocs.io/).
 
 Choose whatever you find most comfortable.
-You can complete every lab we'll do with any of these tools.
+You can complete every lab with any of these (or other) tools.
 
 ### MySQL CLI example
 

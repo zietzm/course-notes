@@ -103,7 +103,7 @@ I recognize this seems like a lot of work.
 
 Luckily, there are some shortcuts you can use.
 For example, I didn't individually copy and paste all those codes from a website.
-Instead, after identifying that I'd like (e.g.) [all codes starting with `I25`](https://www.icd10data.com/ICD10CM/Codes/I00-I99/I20-I25/I25-), I used [our class database](/course-notes/f20-symbolic/lab1#connect-to-the-class-database) to run
+Instead, after identifying that I'd like (e.g.) [all codes starting with `I25`](https://www.icd10data.com/ICD10CM/Codes/I00-I99/I20-I25/I25-), I used [our class database](/course-notes/f20-symbolic/labs/lab1#connect-to-the-class-database) to run
 
 ```sql
 SELECT DISTINCT concept_code

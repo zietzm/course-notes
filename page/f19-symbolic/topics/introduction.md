@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-19
 title: Introduction
 permalink: /f19-symbolic/introduction
 ---

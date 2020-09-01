@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Lab 7
-permalink: /f20-symbolic/lab7
+title: Lab 10
+permalink: /f20-symbolic/lab10
 ---
 
 
-<!--
-## Admin
+
+<!-- ## Admin
 
 ## Intro
 
