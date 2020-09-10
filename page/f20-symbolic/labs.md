@@ -4,8 +4,6 @@ title: Lab assignments
 permalink: /f20-symbolic/labs
 ---
 
-<span class="newthought">We switched</span> from a large semester project plus labs to a project spread across labs.
-
 I've split the labs into two parts: introduction and a study.
 
 ## Motivation, setup, basic examples
