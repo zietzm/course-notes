@@ -90,6 +90,7 @@ A couple sentences for each point could be sufficient.
 2. Which terminology do you think would be easier to add the [remaining 31 types of pizza](https://www.foodrepublic.com/2015/11/18/have-you-tried-these-40-types-of-pizza/) into, and why?
 3. Can you name one advantage and one disadvantage of each terminology vs the other?
 4. Can you think of any ways to improve Terminology 2?{% include sidenote.html id="pizza2" note="Don't stress too much on this one. This is one of the overall topics of the course." %}
+5. Can you think of another way you might organize these concepts?
 
 **That's all for this lab!**
 
