@@ -18,8 +18,7 @@ I've split the labs into two parts: introduction and a study.
 
 ## An observational study: application of symbolic methods
 
-5. Lab 5: Hypothesis, variables, comparisons
-<!-- [Lab 5: Hypothesis, variables, comparisons]({{ site.baseurl }}{{ page.dir }}lab5) -->
+5. [Lab 5: Hypothesis, variables, comparisons]({{ site.baseurl }}{{ page.dir }}lab5)
 
 6. Lab 6: Confounding variables
 <!-- [Lab 6: Confounding variables]({{ site.baseurl }}{{ page.dir }}lab6) -->
