@@ -20,16 +20,15 @@ I've split the labs into two parts: introduction and a study.
 
 5. [Lab 5: Hypothesis, variables, comparisons]({{ site.baseurl }}{{ page.dir }}lab5)
 
-6. Lab 6: Confounding variables
-<!-- [Lab 6: Confounding variables]({{ site.baseurl }}{{ page.dir }}lab6) -->
+6. [Lab 6: Sample size check using real data]({{ site.baseurl }}{{ page.dir }}lab6)
 
-7. Lab 7: Definitions for OMOP data
+7. Lab 7: Create study protocol
 <!-- [Lab 7: Definitions for OMOP data]({{ site.baseurl }}{{ page.dir }}lab7) -->
 
-8. Lab 8: Refine definitions based on feedback
+8. Lab 8: Refine based on feedback
 <!-- [Lab 8: Refine definitions based on feedback]({{ site.baseurl }}{{ page.dir }}lab8) -->
 
-9. Lab 9: Plausible biological mechanisms
+9. Lab 9: Explore plausible mechanisms
 <!-- [Lab 9: Plausible biological mechanisms]({{ site.baseurl }}{{ page.dir }}lab9) -->
 
 10. Lab 10: TBD
