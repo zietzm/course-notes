@@ -22,8 +22,7 @@ I've split the labs into two parts: introduction and a study.
 
 6. [Lab 6: Sample size check using real data]({{ site.baseurl }}{{ page.dir }}lab6)
 
-7. Lab 7: Create study protocol
-<!-- [Lab 7: Definitions for OMOP data]({{ site.baseurl }}{{ page.dir }}lab7) -->
+7. [Lab 7: Reflection]({{ site.baseurl }}{{ page.dir }}lab7)
 
 8. Lab 8: Refine based on feedback
 <!-- [Lab 8: Refine definitions based on feedback]({{ site.baseurl }}{{ page.dir }}lab8) -->
