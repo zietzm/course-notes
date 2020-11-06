@@ -24,8 +24,7 @@ I've split the labs into two parts: introduction and a study.
 
 7. [Lab 7: Reflection]({{ site.baseurl }}{{ page.dir }}lab7)
 
-8. Lab 8: Refine based on feedback
-<!-- [Lab 8: Refine definitions based on feedback]({{ site.baseurl }}{{ page.dir }}lab8) -->
+8. [Lab 8: Phenotype definitions]({{ site.baseurl }}{{ page.dir }}lab8)
 
 9. Lab 9: Explore plausible mechanisms
 <!-- [Lab 9: Plausible biological mechanisms]({{ site.baseurl }}{{ page.dir }}lab9) -->
