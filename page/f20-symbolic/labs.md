@@ -26,8 +26,7 @@ I've split the labs into two parts: introduction and a study.
 
 8. [Lab 8: Phenotype definitions]({{ site.baseurl }}{{ page.dir }}lab8)
 
-9. Lab 9: Explore plausible mechanisms
-<!-- [Lab 9: Plausible biological mechanisms]({{ site.baseurl }}{{ page.dir }}lab9) -->
+9. [Lab 9: Refine phenotype/reference vs interface]({{ site.baseurl }}{{ page.dir }}lab9)
 
 10. Lab 10: TBD
 <!-- [Lab 10: TBD]({{ site.baseurl }}{{ page.dir }}lab10) -->
