@@ -35,3 +35,7 @@ These notes are for BINF 4003 - Methods III: Symbolic Methods, taught in the Fal
 
 7. Concept mapping: MetaMap, Usagi, BioAnnotator
 <!-- [Concept mapping](concept-mapping): MetaMap, Usagi, BioAnnotator -->
+
+## Midterm
+
+[Solutions](midterm)
